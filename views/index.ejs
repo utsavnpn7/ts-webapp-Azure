@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title><%= title %></title>
+    <style>
+        body { font-family: sans-serif; margin: 40px; background: #f4f4f4; }
+        h1 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1><%= title %></h1>
+    <p><%= message %></p>
+
+    <h3>Shopping List:</h3>
+    <ul>
+        <!-- This loops through our array of items -->
+        <% items.forEach(function(item) { %>
+            <li><%= item %></li>
+        <% }); %>
+    </ul>
+</body>
+</html>
